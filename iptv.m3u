@@ -1,7 +1,9 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="Hamburg 1" tvg-id="Hamburg1.de" group-title="IPTV-DE" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/hamburg1.png",Hamburg 1
+#EXTINF:-1 tvg-name="Hamburg 1" tvg-id="Hamburg1.de" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/hamburg1.png",Hamburg 1
 pipe://ffmpeg -loglevel fatal -i https://live2.telvi.de/hls/hamburg1_hd720.m3u8 -vcodec copy -acodec copy -metadata service_name=Hamburg\ 1 -metadata service_provider=IPTV-DE -mpegts_service_type advanced_codec_digital_sdtv -f mpegts pipe:1
-#EXTINF:-1 tvg-name="noa4 Hamburg HD" tvg-id="" group-title="IPTV-DE" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/noa4.png",noa4 Hamburg HD
+#EXTINF:-1 tvg-name="noa4 Hamburg HD" tvg-id="" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/noa4.png",noa4 Hamburg HD
 pipe://ffmpeg -loglevel fatal -i https://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8 -vcodec copy -acodec copy -metadata service_name=noa4\ Hamburg\ HD -metadata service_provider=IPTV-DE -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
-#EXTINF:-1 tvg-name="noa4 Norderstedt HD" tvg-id="" group-title="IPTV-DE" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/noa4.png",noa4 Norderstedt HD
+#EXTINF:-1 tvg-name="noa4 Norderstedt HD" tvg-id="" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/noa4.png",noa4 Norderstedt HD
 pipe://ffmpeg -loglevel fatal -i https://hls1.wtnet.de/noa4/apple/wifi6500.m3u8 -vcodec copy -acodec copy -metadata service_name=noa4\ Norderstedt\ HD -metadata service_provider=IPTV-DE -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
+#EXTINF:-1 tvg-name="NASA TV" tvg-id="NASA.us" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/nasatv.png",NASA TV
+pipe://ffmpeg -loglevel fatal -i https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8 -vcodec copy -acodec copy -metadata service_name=NASA\ TV -metadata service_provider=IPTV-US -mpegts_service_type advanced_codec_digital_sdtv -f mpegts pipe:1
