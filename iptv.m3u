@@ -5,5 +5,9 @@ pipe://ffmpeg -loglevel fatal -i https://live2.telvi.de/hls/hamburg1_hd720.m3u8 
 pipe://ffmpeg -loglevel fatal -i https://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8 -vcodec copy -acodec copy -metadata service_name=noa4\ Hamburg\ HD -metadata service_provider=IPTV-DE -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
 #EXTINF:-1 tvg-name="noa4 Norderstedt HD" tvg-id="" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/noa4.png",noa4 Norderstedt HD
 pipe://ffmpeg -loglevel fatal -i https://hls1.wtnet.de/noa4/apple/wifi6500.m3u8 -vcodec copy -acodec copy -metadata service_name=noa4\ Norderstedt\ HD -metadata service_provider=IPTV-DE -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
+#EXTINF:-1 tvg-name="Tide TV (Hamburg - ab 12:00)" tvg-id="" group-title="GERMANY LOCAL" tvg-logo="https://i.imgur.com/p2lQVo0.png",Tide TV (Hamburg - ab 12:00)
+https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/playlist.m3u8?&ref=www.tidenet.de&seid=166119
 #EXTINF:-1 tvg-name="NASA TV" tvg-id="NASA.us" group-title="IPTV" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/nasatv.png",NASA TV
 pipe://ffmpeg -loglevel fatal -i https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8 -vcodec copy -acodec copy -metadata service_name=NASA\ TV -metadata service_provider=IPTV-US -mpegts_service_type advanced_codec_digital_sdtv -f mpegts pipe:1
+#EXTINF:-1 tvg-name="Parlamentsfernsehen" tvg-id="" group-title="GERMANY LOCAL" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/parlamentsfernsehen.png",Parlamentsfernsehen
+https://c13014-l-hls.u.core.cdn.streamfarm.net/1000153copo/hk2.m3u8
